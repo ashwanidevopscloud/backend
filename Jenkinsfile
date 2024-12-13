@@ -21,7 +21,7 @@ pipeline {
                 }
             }
         }
-        stage('install the dependencies') {
+    /*     stage('install the dependencies') {
             steps {
                 sh 'npm install'
             }
@@ -34,7 +34,7 @@ pipeline {
                 }
         }
 
-    }
+    } */
     post{
         always{
             echo "This section runs always"
