@@ -12,6 +12,13 @@ pipeline {
         appVersion=''
     }
     stages {
+
+        stage('Test') {
+            steps {
+                sh 'echo this is Test'  
+                sh 'env'
+            }
+        }
         // stage('Read the Version') {
         //     steps {
         //         script {
