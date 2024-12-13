@@ -28,7 +28,7 @@ pipeline {
                 }
             }
         }
-    /*     stage('install the dependencies') {
+        stage('install the dependencies') {
             steps {
                 sh 'npm install'
             }
@@ -39,7 +39,7 @@ pipeline {
                 docker build -t joindevops/backend:${appversion}
                 docker images"""
                 }
-        }*/
+        }
 
     } 
     post{
