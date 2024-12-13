@@ -32,9 +32,9 @@ pipeline {
                 docker build -t joindevops/backend:${appversion}
                 docker images"""
                 }
-        }
+        }*/
 
-    } */
+    } 
     post{
         always{
             echo "This section runs always"
