@@ -32,17 +32,6 @@ pipeline {
                 docker images"""
                 }
         }
-        stage('Test') {
-            steps {
-                sh 'echo this is Test'  
-                sh 'env'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'echo this is deploy'
-            }
-        }
         stage('Print Params'){
             steps{
                 echo "Hello ${params.PERSON}"
