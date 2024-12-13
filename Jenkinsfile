@@ -12,15 +12,15 @@ pipeline {
         appVersion=''
     }
     stages {
-        stage('Read the Version') {
-            steps {
-                script {
-                        def packageJson=readJson file:'package.json'
-                        appVersion=packageJson.Version
-                        echo "App version:${appVersion}"      
-                }
-            }
-        }
+        // stage('Read the Version') {
+        //     steps {
+        //         script {
+        //                 def packageJson=readJson file:'package.json'
+        //                 appVersion=packageJson.Version
+        //                 echo "App version:${appVersion}"      
+        //         }
+        //     }
+        // }
     /*     stage('install the dependencies') {
             steps {
                 sh 'npm install'
