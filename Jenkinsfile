@@ -33,13 +33,13 @@ pipeline {
                 sh 'npm install'
             }
         }
-        /* stage('docker build') {
+        stage('docker build') {
             steps {
                 sh """
                 docker build -t joindevops/backend:${appversion}
                 docker images"""
                 }
-        } */
+        }
 
     } 
     post{
